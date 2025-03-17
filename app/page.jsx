@@ -100,7 +100,7 @@ export default function Home() {
         <ul style={{ paddingLeft: '0px' }}>
           {videoList.map((video, index) => (
             <li key={index} style={{ listStyle: "none" }}>
-              <h3 style={{ paddingBottom: "-2px", marginBottom: "-2px" }}>💦 {video.title}</h3>
+              <h3 style={{ paddingBottom: "-2px", marginBottom: "-2px" }}>{video.title}</h3>
               <video controls width="500" src={video.url}></video>
             </li>
           ))}
